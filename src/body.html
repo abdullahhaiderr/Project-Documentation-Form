@@ -1,0 +1,76 @@
+<a class="skip-link" href="#view">Skip to content</a>
+
+<div class="app" id="app">
+  <aside class="rail" aria-label="Brief progress and sections">
+    <div class="rail-brand">
+      <img class="brand-img" id="brandImg" alt="Creative Haider — Design. Develop. Grow." width="800" height="264">
+      <p class="brand-fallback" id="brandFallback" hidden>Creative <em>Haider</em></p>
+      <p class="brand-tag">Project brief</p>
+    </div>
+
+    <div class="progress-block" id="progressBlock" hidden>
+      <div class="ring" aria-hidden="true">
+        <svg viewBox="0 0 100 100" focusable="false">
+          <circle class="ring-track" cx="50" cy="50" r="44"></circle>
+          <circle class="ring-fill" id="ringFill" cx="50" cy="50" r="44"></circle>
+        </svg>
+        <div class="ring-label"><b id="ringPct">0%</b><span>done</span></div>
+      </div>
+      <div class="progress-text">
+        <strong id="progressTitle">Not started</strong>
+        <span id="progressSub">Answers save as you go</span>
+      </div>
+    </div>
+
+    <nav class="rail-nav" id="navBlock" aria-labelledby="navTitle" hidden>
+      <h2 class="rail-nav-title" id="navTitle">Sections</h2>
+      <ol class="steps" id="nav"></ol>
+    </nav>
+
+    <div class="rail-prep" id="railPrep">
+      <h2 class="rail-nav-title">Good to have handy</h2>
+      <ul>
+        <li>Your logo and brand colours, if you have them</li>
+        <li>Links to sites you like, and ones you do not</li>
+        <li>Photos, or an idea of the imagery you want</li>
+        <li>A rough budget range and ideal launch date</li>
+      </ul>
+    </div>
+
+    <div class="rail-foot">
+      <p class="save-state" id="saveState"><span class="save-dot" aria-hidden="true"></span><span id="saveText">Answers save automatically</span></p>
+      <p class="rail-help">Questions about this brief?<br><a href="mailto:contact.abdullahhaider@gmail.com" id="railMail">contact.abdullahhaider@gmail.com</a></p>
+      <button class="rail-reset" id="resetBtn" type="button" hidden>Start over</button>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="mobile-bar">
+      <div class="mobile-row">
+        <img class="mobile-logo" id="brandImgMobile" alt="Creative Haider" width="800" height="264">
+        <span class="mobile-step" id="mobileStep">Project brief</span>
+      </div>
+      <div class="mobile-progress" aria-hidden="true"><i id="mobileProgress"></i></div>
+    </div>
+
+    <div class="view" id="view" tabindex="-1"></div>
+  </main>
+</div>
+
+<div class="actionbar" id="actionbar" hidden>
+  <div class="actionbar-inner">
+    <button class="btn btn-ghost" id="btnBack" type="button">Back</button>
+    <p class="actionbar-meta"><span class="kbd">Ctrl</span><span>+</span><span class="kbd">Enter</span><span>to continue</span></p>
+    <button class="btn btn-primary" id="btnNext" type="button">Continue</button>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+<div class="sr-only" id="live" aria-live="polite"></div>
+
+<noscript>
+  <div class="noscript">
+    <strong>This brief needs JavaScript.</strong> Please enable JavaScript in your browser, or email
+    <a href="mailto:contact.abdullahhaider@gmail.com">contact.abdullahhaider@gmail.com</a> and we will send you the questions.
+  </div>
+</noscript>
